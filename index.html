@@ -30,6 +30,7 @@
             margin-right: -30px; /* Marge négative pour superposer */
             z-index: 2; /* Position au-dessus de la colonne de droite */
             position: relative;
+
         }
 
         .col-md-8 {
@@ -39,7 +40,7 @@
         }
 
         .overlay-column {
-            background-color: #fff;
+            background-color: #14449e;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -54,12 +55,12 @@
         .header h1 {
             font-size: 36px;
             margin-bottom: 5px;
-            color: #007bff;
+            color: #ffffff;
         }
 
         .header p {
             font-size: 16px;
-            color: #555;
+            color: #ffffff;
         }
 
         .profile-picture {
@@ -72,7 +73,7 @@
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid #002fff5b;
+            border: 5px solid #ffffff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
@@ -87,9 +88,9 @@
         }
 
         .section-profile h2 {
-            font-size: 24px;
+            ffont-size: 24px;
             margin-bottom: 15px;
-            color: #007bff;
+            color: #ffffff;
         }
 
         .section {
@@ -106,7 +107,7 @@
         .section h2 {
             font-size: 24px;
             margin-bottom: 15px;
-            color: #007bff;
+            color: #14449e;
         }
 
         .job h3 {
@@ -115,7 +116,13 @@
             color: #333;
         }
 
-        .job-title,
+        .job-title
+        {
+            font-size: 16px;
+            color: #444;
+            text-decoration: underline;
+        }
+
         .job-date {
             font-size: 16px;
             color: #444;
@@ -144,7 +151,7 @@
 
         .column-skills li {
             font-size: 16px;
-            color: #444;
+            color: #ffffff;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -158,7 +165,7 @@
         .progress {
             flex: 3;
             height: 10px;
-            background-color: #f5f5f5;
+            background-color: #cecece;
             border-radius: 5px;
             margin-left: 10px;
         }
@@ -179,10 +186,12 @@
                     <div class="profile-picture">
                         <img src="./1574753904013.jpg" alt="Photo de profil">
                     </div>
-                    <h1>Thomas CHAPTAL</h1>
-                    <p>Email: thomas_ch@ymail.com</p>
-                    <p>Phone: 06 73 35 16 88</p>
-                    <p>Adress: 14 Rue Ernest Picard 63000 Clermont-Ferrand</p>
+                    <div class="section-profile">
+                        <h1>Thomas CHAPTAL</h1>
+                        <p>Email: thomas_ch@ymail.com</p>
+                        <p>Phone: 06 73 35 16 88</p>
+                        <p>Adress: 14 Rue Ernest Picard 63000 Clermont-Ferrand</p>
+                    </div>
                     <div class="section-profile">
                         <h2>Skills</h2>
                         <ul class="column-skills">
@@ -200,12 +209,14 @@
                             </li>
                         </ul>
                     </div>
-                    <h2>Technologies</h2>
+                    <div class="section-profile">
+                        <h2>Technologies</h2>
                     <ul class="skills">
                         <li>Technologie 1</li>
                         <li>Technologie 2</li>
                         <li>Technologie 3</li>
                     </ul>
+                    </div>
                 </div>
             </div>
             <div class="col-md-8">
