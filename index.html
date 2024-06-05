@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Thomas CHAPTAL</title>
+    <style>
+        body {
+            font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .col-md-4 {
+            flex: 1;
+            margin-right: -30px; /* Marge négative pour superposer */
+            z-index: 2; /* Position au-dessus de la colonne de droite */
+            position: relative;
+        }
+
+        .col-md-8 {
+            flex: 2;
+            z-index: 1; /* Position au-dessous de la colonne de gauche */
+            position: relative;
+        }
+
+        .overlay-column {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+            color: #007bff;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .profile-picture {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-picture img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #007bff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-profile {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .section-profile:last-child {
+            border-bottom: none;
+        }
+
+        .section-profile h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            margin-left: 80px;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .job h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .job-title,
+        .job-date {
+            font-size: 16px;
+            color: #444;
+        }
+
+        .skills {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .column-skills {
+            list-style: none;
+            padding: 0;
+        }
+
+        .column-skills li {
+            font-size: 16px;
+            color: #444;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .skill-label {
+            flex: 1;
+        }
+
+        .progress {
+            flex: 3;
+            height: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: 5px;
+            background-color: #007bff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 overlay-column">
+                <div class="header">
+                    <div class="profile-picture">
+                        <img src="chemin/vers/photo.jpg" alt="Photo de profil">
+                    </div>
+                    <h1>Prénom Nom</h1>
+                    <p>Email: exemple@email.com</p>
+                    <p>Téléphone: 01 23 45 67 89</p>
+                    <p>Adresse: 123 Rue du CV, Ville, Pays</p>
+                    <div class="section-profile">
+                        <h2>Compétences</h2>
+                        <ul class="column-skills">
+                            <li>
+                                <div class="skill-label">Compétence 1</div>
+                                <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-label">Compétence 2</div>
+                                <div class="progress"><div class="progress-bar" style="width: 65%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-label">Compétence 3</div>
+                                <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2>Technologies</h2>
+                    <ul class="skills">
+                        <li>Technologie 1</li>
+                        <li>Technologie 2</li>
+                        <li>Technologie 3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="section">
+                    <h2>Expérience professionnelle</h2>
+                    <div class="job">
+                        <h3>Nom de l'entreprise</h3>
+                        <p class="job-title">Poste occupé</p>
+                        <p class="job-date">Date de début - Date de fin</p>
+                        <ul>
+                            <li>Description des tâches et réalisations.</li>
+                            <li>Description des tâches et réalisations.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Ajouter d'autres expériences professionnelles ici -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
