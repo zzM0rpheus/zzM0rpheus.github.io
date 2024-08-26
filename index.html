@@ -9,7 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif, Georgia, 'Times New Roman', Times, serif;
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
@@ -43,27 +43,23 @@
             padding-left: 60px;
         }
 
-        .overlay-column {
-            background-color: #14449e;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+        .overlay-column {}
 
         .header {
-            text-align: center;
+            text-align: left;
             margin-bottom: 30px;
         }
 
         .header h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 36px;
             margin-bottom: 5px;
-            color: #ffffff;
+            color: #14449e;
         }
 
         .header p {
             font-size: 16px;
-            color: #ffffff;
+            color: #14449e;
             margin: 5px 0;
         }
 
@@ -71,18 +67,11 @@
             margin-right: 8px;
         }
 
-        .profile-picture {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
         .profile-picture img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: content-box;
+            width: 160px;
+            position: relative;
+            left: -70px;
         }
 
         .section-profile {
@@ -95,16 +84,30 @@
             border-bottom: none;
         }
 
+        .section-profile h1 span {
+            font-size: 36px;
+            font-weight: lighter;
+            margin-bottom: 15px;
+            color: 14449e;
+        }
+
         .section-profile h2 {
             font-size: 24px;
             margin-bottom: 15px;
-            color: #ffffff;
+            color: #14449e;
+        }
+
+        .section-profile h2 span {
+            font-size: 24px;
+            font-weight: lighter;
+            margin-bottom: 15px;
+            color: #14449e;
         }
 
         .section {
             margin-bottom: 40px;
             padding-bottom: 20px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #14449e;
         }
 
         .section:last-child {
@@ -113,6 +116,13 @@
 
         .section h2 {
             font-size: 24px;
+            margin-bottom: 15px;
+            color: #14449e;
+        }
+
+        .section h2 span {
+            font-size: 24px;
+            font-weight: lighter;
             margin-bottom: 15px;
             color: #14449e;
         }
@@ -148,8 +158,21 @@
             font-size: 14px;
             padding: 5px 10px;
             border-radius: 20px;
-            margin-right: 10px;
-            margin-bottom: 10px;
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .skills-box {
+            background-color: rgba(20, 68, 158, 0.1);
+            border-left: 5px solid rgba(20, 68, 158, 0.8);
+            border-right: 5px solid rgba(20, 68, 158, 0.8);
+            margin-top: 1px;
+            margin-bottom: 1px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
         .column-skills {
@@ -159,7 +182,7 @@
 
         .column-skills li {
             font-size: 16px;
-            color: #ffffff;
+            color: #14449e;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -204,10 +227,10 @@
             <div class="col-md-4 overlay-column">
                 <div class="header">
                     <div class="profile-picture">
-                        <img src="./1574753904013.jpg" alt="Photo de profil">
+                        <img src="./1574753904013.webp" alt="Photo de profil">
                     </div>
                     <div class="section-profile">
-                        <h1>Thomas CHAPTAL</h1>
+                        <h1>Thomas <span>Chaptal</span></h1>
                         <p><i class="fas fa-envelope"></i> thomas_ch@ymail.com</p>
                         <p><i class="fas fa-phone"></i> 06 73 35 16 88</p>
                         <p><i class="fas fa-map-marker-alt"></i> 14 Rue Ernest Picard, 63000 Clermont-Ferrand</p>
@@ -255,7 +278,7 @@
             </div>
             <div class="col-md-8">
                 <div class="section">
-                    <h2>Professional Experience</h2>
+                    <h2>Profesionnal <span>Experiences</span></h2>
                     <div class="job">
                         <h3>Perfect Memory</h3>
                         <p class="job-title">CIO</p>
@@ -281,6 +304,11 @@
                             <li>Work on KPI feedback of the operations team with the implementation of a delivery
                                 process</li>
                         </ul>
+                        <div class="skills-box">
+                            <ul class="skills">
+                                <li>Office 365</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="job">
                         <h3>Michelin</h3>
@@ -298,6 +326,11 @@
                             <li>Involve and follow up BU on Decommissioning process</li>
                             <li>Focus point for infrastructure project needs</li>
                         </ul>
+                        <div class="skills-box">
+                            <ul class="skills">
+                                <li>Office 365</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="job">
                         <h3>Bolloré Transport et Logistics</h3>
@@ -312,6 +345,11 @@
                             <li>Providers's management (hosting companies, solutions editor)</li>
                             <li>Implementation of Manhattan WM Open System solution (MIF, SCI, WMS)</li>
                         </ul>
+                        <div class="skills-box">
+                            <ul class="skills">
+                                <li>Office 365</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="job">
                         <h3>Cyllene</h3>
@@ -320,7 +358,7 @@
                         <ul>
                             <li>User management</li>
                             <li>Production tools deployment</li>
-                            <li>PStudy and adjustment of LPARS</li>
+                            <li>Study and adjustment of LPARS</li>
                             <li>VIOS deployment</li>
                             <li>Ressources optimization</li>
                             <li>Backup Management</li>
@@ -328,6 +366,11 @@
                             <li>Events Management (P1-P3)</li>
                             <li>HMC management</li>
                         </ul>
+                        <div class="skills-box">
+                            <ul class="skills">
+                                <li>Office 365</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
